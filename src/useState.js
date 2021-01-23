@@ -1,48 +1,43 @@
-// import React, { useState } from "react";
+// // import React, { useState } from "react";
 
-// export const App = () => {
-//     const [item, setItem] = useState(1);
-//     const incrementItem = () => setItem(item + 1);
-//     const decrementItem = () => setItem(item - 1);
-//     return (
-//         <div className="App">
-//             <h1>Hello {item}</h1>
-//             <button onClick={incrementItem}>+</button>
-//             <button onClick={decrementItem}>-</button>
-//         </div>
-//     );
-// };
+// // const App = () => {
+// //     const [item, setItem] = useState(0);
+// //     const incrementItem = () => setItem(item + 1);
+// //     const decrementItem = () => setItem(item - 1);
+// //     return (
+// //         <div className="App">
+// //             <h1>Hello {item}</h1>
+// //             <button className="increment" onClick={incrementItem}>
+// //                 increment
+// //             </button>
 
-import React, { Component } from "react";
+// //             <button className="decrement" onClick={decrementItem}>
+// //                 decrement
+// //             </button>
+// //         </div>
+// //     );
+// // };
 
-class UseState extends Component {
-    state = {
-        item: 1,
-    };
-    incrementItem = () => {
-        this.setState((state) => {
-            return {
-                item: state + 1,
-            };
-        });
-    };
-    decrementItem = () => {
-        this.setState((state) => {
-            return {
-                item: state + 1,
-            };
-        });
-    };
-    render() {
-        const { item } = this.state;
-        return (
-            <div className="App">
-                <h1>Hello {item}</h1>
-                <button onClick={this.state.incrementItem}>+</button>
-                <button onClick={this.state.decrementItem}>-</button>
-            </div>
-        );
-    }
-}
+// import React, { Component } from "react";
+// class App extends Component {
+//     state = {
+//         item: 0,
+//     };
+//     incrementItem = () => {
+//         this.setState({ item: this.state.item + 1 });
+//     };
+//     decrementItem = () => {
+//         this.setState({ item: this.state.item - 1 });
+//     };
+//     render() {
+//         return (
+//             <div className="App">
+//                 <h1>Hello {this.state.item}</h1>
+//                 <button onClick={this.incrementItem}>+</button>
+//                 <button onClick={this.decrementItem}>-</button>
+//             </div>
+//         );
+//     }
+// }
 
-export default UseState;
+// // export default App;
