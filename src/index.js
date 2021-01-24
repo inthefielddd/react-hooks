@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./useTabs";
+import App from "./usePreventLeave";
 
 ReactDOM.render(
     <React.StrictMode>
